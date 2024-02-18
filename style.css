@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background: #C6FFDD;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #f7797d, #FBD786, #C6FFDD);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #f7797d, #FBD786, #C6FFDD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+
+header {
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0px;
+    background: white;
+}
+
+nav {
+    min-height: 10%;
+    margin: auto;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav h1,
+nav ul {
+    font-size: 1.5rem;
+    flex: 1;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+}
+
+nav img {
+    border-radius: 50%;
+    border: 1px solid black;
+    width: 7%;
+    margin: 5px;
+}
+
+section {
+    padding-top: 10%;
+    min-height:  100vh;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+}
+
+section h2 {
+    font-size:  5rem;
+    color: white;
+    padding: 5%;
+}
+section p {
+    font-size: 2rem;
+    text-align: center;
+    animation: fadein 8s;
+}
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+.responsive {
+    max-width: 80%;
+    height: auto;
+    margin: 0 10%;
+    border: 2px solid rgb(61, 117, 163);
+    border-radius: 10px;
+    
+}
+
+.responsive:hover {
+    box-shadow: 0px 0px 10px 5px #597092;
+    transition: all 0.4s ease;
+}
+
+.bubble {
+    position: absolute;
+    z-index: -2;
+    background: linear-gradient(to left, #ebbcec, #c9e2e2);
+    transform: scale(2);
+    transition: all 0.5s;
+}
+
+span {
+    opacity: 0;
+    transition: all 0.4s ease;
+    transform: translateY(50px);
+    display: inline-block;
+}
+
+span.fade {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+form {
+    border-radius: 5px;
+    background-color: rgba(242, 242, 242, 0.5);
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  input[type=text], input[type=tel], input[type=email], select, textarea {
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box;
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    width: 70%;
+    background-color: rgb(69, 110, 129);
+    color: white;
+    padding: 14px 20px;
+    margin: 0 15%;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+   
+  input[type]:focus, textarea:focus {
+    box-shadow: 0px 0px 5px rgba(0, 165, 255, 1);  
+  }
+
+  footer{
+    background: rgba(25, 51, 77, 0.9);
+    padding: 10px;
+    border-top: 1px solid white;
+    text-align: center;
+  }
+  
+ 

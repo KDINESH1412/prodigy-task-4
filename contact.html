@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Portfolio</title>
+</head>
+
+<body style="background: linear-gradient(to bottom, #d8f2c0, #C6FFDD);">
+
+    <header>
+        <nav>
+            <img src="images/avatar.png.jpg" alt="Webpage Author's photo. Karanam Dinesh">
+            <h1>Karanam Dinesh</h1>
+            <ul>
+                <li><a data-page="home" href="index.html#home">Home</a></li>
+                <li><a data-page="intro" href="index.html#intro">Intro</a></li>
+                <li><a data-page="projects" href="index.html#projects">Projects</a></li>
+                <li><a data-page="contact" href="#contact">Contact</a></li>
+                <div class="bubble"></div>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section data-index="3" class="contact" id="contact">
+            <h2>Contact</h2>
+            <form class="contactform" action="#">
+                Name: <input type="text" name="fullname" placeholder="Full Name"><br>
+                Mobile: <input type="tel" name="telephone" placeholder="Mobile"><br>
+                E-mail: <input type="email" name="email" placeholder="example@abc.com" autocomplete="off"><br>
+                Message: <textarea name="message" rows="10" cows="30"></textarea>
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p> Created with a lot of love & coffee. By @Dinesh</p>
+    </footer>
+
+    <script src="./app.js"></script>
+
+</body>
+
+</html>
